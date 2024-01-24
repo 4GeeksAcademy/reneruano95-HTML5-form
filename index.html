@@ -14,29 +14,30 @@
 </head>
 
 <body>
-    <div class="d-flex align-item-center" style="height: 100%;">
+    <div class="d-flex align-items-center" style="height: 100%;">
         <div class="container">
             <!-- Content here -->
             <div class="border border-bottom-0 d-flex flex-column">
-                <div class="bg-body-secondary p-2 border-bottom">
+                <div class="bg-body-secondary p-2 mb-2 border-bottom ">
                     <h3>Payment form example</h3>
                 </div>
-                <div class="alert alert-danger m-2" role="alert">
-                    Some fields are missings
+                <div class="alert alert-danger alert-dismissible fade show mx-2 mb-2" role="alert">
+                    Some fields are missings.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
             </div>
             <div class="border-start border-end">
                 <form class="row g-3 px-2">
-                    <div class="col-md-5 position-relative">
+                    <div class="col-sm-5 position-relative">
                         <label for="inputCard" class="form-label">Card #</label>
                         <input type="tel" class="form-control" id="inputCard" placeholder="XXXX-XXXX-XXXX-XXXX"
                             required>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-sm-2">
                         <label for="inputCVC" class="form-label">CVC #</label>
                         <input type="tel" class="form-control" id="inputCVC" placeholder="000">
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-sm-5">
                         <label for="inputAmount" class="form-label">Amount</label>
                         <div class="input-group">
                             <div class="input-group-text">$</div>
@@ -44,20 +45,20 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-sm-6">
                         <label for="inputFirstName" class="form-label">First Name</label>
                         <input type="text" class="form-control" id="inputFirstName">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-sm-6">
                         <label for="inputLastName" class="form-label">Last Name</label>
                         <input type="text" class="form-control" id="inputLastName">
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-sm-6">
                         <label for="inputCity" class="form-label">City</label>
                         <input type="text" class="form-control" id="inputCity">
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-sm-4">
                         <label for="inputState" class="form-label">State</label>
                         <select id="inputState" class="form-select">
                             <option selected>Choose...</option>
@@ -114,13 +115,14 @@
                             <option value="WY">Wyoming</option>
                         </select>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-sm-2">
                         <label for="inputZip" class="form-label">Zip</label>
                         <input type="text" class="form-control" id="inputZip">
                     </div>
 
-                    <div class="col-6">
-                        <div class=" d-flex justify-content-center">
+                    <div class="col-sm-6">
+                        <p>We accept:</p>
+                        <div class=" d-flex justify-content-start">
                             <div class="bg-secondary rounded-1 ps-3">
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="inlineOptionsCard"
@@ -154,8 +156,8 @@
                         </div>
 
                     </div>
-                    <div class=" col-6">
-                        <label for="textareaMessage" class="form-label">Message</label>
+                    <div class=" col-sm-6 >
+                        <label for=" textareaMessage" class="form-label">Message</label>
                         <textarea class="form-control" id="textareaMessage" rows="3"></textarea>
                         <span id="textareaMessage" class="form-text">
                             Add any notes here.
@@ -163,7 +165,7 @@
                     </div>
 
                     <div class="bg-body-secondary border">
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-end  p-2">
+                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-end  p-2">
                             <button type="button" class="btn btn-secondary">Cancel</button>
                             <button type="submit" class="btn btn-primary">Send</button>
                         </div>
